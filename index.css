@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Malgun Gothic', '맑은 고딕', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background-color: #faf6f0;
+  color: #3b2210;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 커스텀 포커스 및 폼 스타일 보조 */
+.cafe-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d8cbbe;
+  background-color: #ffffff;
+  transition: all 0.2s ease;
+  font-size: 15px;
+}
+
+.cafe-input:focus {
+  outline: none;
+  border-color: #6b4226;
+  box-shadow: 0 0 0 3px rgba(107, 66, 38, 0.15);
+}
+
+.cafe-btn-primary {
+  background-color: #6b4226;
+  color: #ffffff;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.cafe-btn-primary:hover {
+  background-color: #7d4e2d;
+}
+
+.cafe-btn-primary:active {
+  transform: scale(0.99);
+}
